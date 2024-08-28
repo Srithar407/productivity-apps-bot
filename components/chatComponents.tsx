@@ -42,11 +42,11 @@ export default function ChatComponent() {
                     )
                 })}
             </div>
-            <form className="mt-16 fixed bottom-2 pl-1" onSubmit={handleSubmit}> 
-                <input type="text" className="w-[600px] p-2 rounded-md border-2 mr-2 text-black" placeholder="ask something about cybersecurity ?" 
+            <form className="mt-16 fixed bottom-2 w-11/12" onSubmit={handleSubmit}> 
+                <input type="text" className="md:w-[500px] max-sm:w-3/4 p-2 rounded-md max-sm:ml-[-5px] border-2 mr-2 text-black" placeholder="ask something about cybersecurity ?" 
                 value={input}
                 onChange={handleInputChange}/>
-                <button className="rounded-md bg-blue-800 p-2 mt-2 w-36">send</button>
+                <button className="rounded-md bg-blue-800 p-2 mt-2 md:w-36 max-sm:w-1/5">send</button>
             </form>
         </div>
     )
